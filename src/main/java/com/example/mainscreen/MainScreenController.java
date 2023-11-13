@@ -60,4 +60,16 @@ public class MainScreenController {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void loadUserPassReset(ActionEvent action) throws IOException {
+        Stage stage;
+        Parent root;
+
+        stage = (Stage) register.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("UserPassReset.fxml"));
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

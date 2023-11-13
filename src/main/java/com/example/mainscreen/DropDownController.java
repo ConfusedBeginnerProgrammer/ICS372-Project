@@ -32,7 +32,7 @@ public class DropDownController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        comboBox.getItems().addAll("Primary Care", "Covid 19 Treatment", "OB/GYN", "Dermetology", "Physical Therapy");
+        comboBox.getItems().addAll("Primary Care", "Covid 19 Treatment", "OB/GYN", "Dermatology", "Physical Therapy");
     }
 
     @FXML

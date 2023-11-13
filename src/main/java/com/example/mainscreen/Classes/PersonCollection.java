@@ -41,11 +41,33 @@ public class PersonCollection {
         return null;
     }
 
+    public Person getByPassword(String password) {
+        Person currentPerson;
+        for (int i = 0; i < people.size(); i++) {
+            currentPerson = people.get(i);
+            if (currentPerson.getPassword().equals(password)) {
+                return currentPerson;
+            }
+        }
+        return null;
+    }
+
     public boolean usernameExists(String username) {
         Person currentPerson;
         for (int i = 0; i < people.size(); i++) {
             currentPerson = people.get(i);
             if (currentPerson.getUsername().equals(username) ) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean passwordExists(String password) {
+        Person currentPerson;
+        for (int i = 0; i < people.size(); i++) {
+            currentPerson = people.get(i);
+            if (currentPerson.getPassword().equals(password) ) {
                 return true;
             }
         }
@@ -88,5 +110,21 @@ public class PersonCollection {
             }
         }
         return false;
+    }
+
+    public String getPassword(String username) {
+
+        if(usernameExists(username)){
+            return getByUsername(username).getPassword();
+        }
+        return null;
+    }
+
+    public String getUsername(String password) {
+
+        if(passwordExists(password)){
+            return getByPassword(password).getUsername();
+        }
+        return null;
     }
 }

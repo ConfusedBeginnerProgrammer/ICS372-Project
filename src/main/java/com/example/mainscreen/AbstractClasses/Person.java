@@ -35,6 +35,10 @@ public abstract class Person {
 
     public String getUsername() { return username; }
 
+    public String getPassword() {
+        return password;
+    }
+
     public boolean checkPassword(String passwordAttempt) {
         return passwordAttempt.equals(this.password);
     }

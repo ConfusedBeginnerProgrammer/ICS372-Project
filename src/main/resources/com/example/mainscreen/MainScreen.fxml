@@ -19,7 +19,7 @@
          </font>
       </Label>
       <Button id="createRegister" fx:id="register" contentDisplay="CENTER" layoutX="306.0" layoutY="474.0" mnemonicParsing="false" onAction="#loadRegistrations" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: FFFFFF;" text="Not registerd? Register here" textAlignment="CENTER" textFill="#000000e8" underline="true" />
-      <Button id="createForgot" fx:id="forgot" contentDisplay="CENTER" layoutX="106.0" layoutY="474.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: FFFFFF;" text="Forgot username or password?" textAlignment="CENTER" textFill="#000000e8" underline="true" />
+      <Button id="createForgot" fx:id="forgot" contentDisplay="CENTER" layoutX="106.0" layoutY="474.0" mnemonicParsing="false" onAction="#loadUserPassReset" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: FFFFFF;" text="Forgot username or password?" textAlignment="CENTER" textFill="#000000e8" underline="true" />
       <Button id="createRegister" contentDisplay="CENTER" layoutX="306.0" layoutY="474.0" mnemonicParsing="false" onAction="#loadRegistrations" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: FFFFFF;" text="Not registerd? Register here" textAlignment="CENTER" textFill="#000000e8" underline="true" />
 <!--      <CheckBox alignment="CENTER" layoutX="193.0" layoutY="345.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="225.0" text="Remember me" textAlignment="CENTER">-->
 <!--         <font>-->

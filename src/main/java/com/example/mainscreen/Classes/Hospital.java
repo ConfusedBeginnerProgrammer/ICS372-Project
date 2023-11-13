@@ -1,5 +1,7 @@
 package com.example.mainscreen.Classes;
 
+import com.example.mainscreen.AbstractClasses.Person;
+
 public class Hospital {
     private static Hospital hospital = new Hospital();
     PersonCollection users = new PersonCollection();
@@ -42,5 +44,10 @@ public class Hospital {
 
     public boolean logIn(String username, String password) {
         return users.logIn(username, password);
+    }
+
+    public PersonCollection getUsers() {
+
+        return users;
     }
 }
