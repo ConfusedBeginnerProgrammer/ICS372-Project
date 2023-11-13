@@ -1,0 +1,20 @@
+[33mcommit 57330817bcc69947054976292ea9aae241456540[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Noah Willgohs <yu8119dn@go.minnstate.edu>
+Date:   Sun Nov 12 20:19:12 2023 -0600
+
+    Added Username and Password retrieval functionality:
+    Modified -
+    DropDownController.java - small typo
+    Hospital.java - getUsers method
+    MainScreen.fxml - Forgot username or password button functionality
+    MainScreenController.java - Same as above
+    Person.java - getPassword method
+    PersonCollection.java - 4 Additional Methods
+    ForgotUserPassController.java - The functionality for the username and password retrieval
+    UserPassReset.fxml - UI for the username and password retrieval
+
+[33mcommit 9cec005aabff06da962643cd77da7d6e9559ffed[m
+Author: Dani Belau <belau010@umn.edu>
+Date:   Sun Nov 12 17:50:33 2023 -0600
+
+    working
