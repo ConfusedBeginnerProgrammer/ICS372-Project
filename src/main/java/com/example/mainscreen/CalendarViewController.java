@@ -32,7 +32,7 @@ public class CalendarViewController {
         datePicker.valueProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue == null) {
                 timeListView.setVisible(false);
-                confirmAppointment.setDisable(false);
+                confirmAppointment.setDisable(true);
             } else {
                 timeListView.setVisible(true);
             }
