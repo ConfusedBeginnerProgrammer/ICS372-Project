@@ -51,13 +51,20 @@ public class DropDownController implements Initializable {
         stage.show();
     }
 
-
     @FXML
     public String getComboBox(ActionEvent event){
         return comboBox.getValue();
     }
 
-    public void next(){
+    public void onNextClick() throws IOException {
+        Stage stage;
+        Parent root;
 
+        stage = (Stage) returnToLogin.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("CalendarView.fxml"));
+
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }

@@ -14,7 +14,7 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <Button id="enter" alignment="CENTER" layoutX="182.0" layoutY="331.0" mnemonicParsing="false" onAction="#next" prefHeight="54.0" prefWidth="284.0" style="-fx-background-color: #00AD9E;" text="Next" textAlignment="CENTER" textFill="WHITE" />
+      <Button id="enter" onAction="#onNextClick" alignment="CENTER" layoutX="182.0" layoutY="331.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="284.0" style="-fx-background-color: #00AD9E;" text="Next" textAlignment="CENTER" textFill="WHITE" />
       <Button id="createRegister" fx:id="returnToLogin" contentDisplay="CENTER" layoutX="228.0" layoutY="396.0" mnemonicParsing="false" onAction="#loadMainScreen" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: FFFFFF;" text="Return to login page" textAlignment="CENTER" textFill="#000000e8" underline="true" />
    </children>
 </AnchorPane>

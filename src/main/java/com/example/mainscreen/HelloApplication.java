@@ -14,7 +14,7 @@ import org.controlsfx.control.action.Action;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Patient newPatient = new Patient("Jane","Doe","user1","pass1","bob@email.com","123 nowhere st");
+        Patient newPatient = new Patient("Jane","Doe","user1","pass1","jd@email.com","123 main st");
         Hospital.get().addPatient(newPatient);
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MainScreen.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
