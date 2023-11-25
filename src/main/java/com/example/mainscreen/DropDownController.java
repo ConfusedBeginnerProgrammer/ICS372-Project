@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
@@ -22,6 +23,8 @@ public class DropDownController implements Initializable {
     private ComboBox<String> comboBox;
     @FXML
     private Button returnToLogin;
+    @FXML
+    private Button nextButton;
 
     //Used to test to see if the DropDown worked. If you want to test this you'll need to extend the Application class
 //    @Override
@@ -31,12 +34,16 @@ public class DropDownController implements Initializable {
 //        stage.setTitle("MedSched");
 //        stage.setScene(scene);
 //        stage.show();
-//
 //    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         comboBox.getItems().addAll("Primary Care", "Covid 19 Treatment", "OB/GYN", "Dermatology", "Physical Therapy");
+        comboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                nextButton.setDisable(false);
+            }
+        });
     }
 
     public void loadMainScreen(ActionEvent action) throws IOException {
