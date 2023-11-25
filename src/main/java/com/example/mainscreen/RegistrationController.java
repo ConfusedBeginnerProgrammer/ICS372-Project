@@ -31,6 +31,7 @@ public class RegistrationController {
     @FXML
     private PasswordField verifyPassword;
     private Hospital hospital;
+
     public void loadMainScreen(ActionEvent action) throws IOException {
         Stage stage;
         Parent root;

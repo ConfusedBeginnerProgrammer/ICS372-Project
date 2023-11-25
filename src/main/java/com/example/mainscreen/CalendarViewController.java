@@ -5,10 +5,8 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.DateCell;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.ListView;
+import javafx.geometry.Pos;
+import javafx.scene.control.*;
 import javafx.util.Callback;
 
 import java.time.LocalDate;
@@ -26,7 +24,7 @@ public class CalendarViewController {
         ObservableList<String> timeList = FXCollections.observableArrayList(times);
 
         timeListView.setItems(timeList);
-        timeListView.getSelectionModel().setSelectionMode(javafx.scene.control.SelectionMode.SINGLE);
+        timeListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         timeListView.setVisible(false);
 
         datePicker.valueProperty().addListener((observable, oldValue, newValue) -> {
@@ -35,6 +33,10 @@ public class CalendarViewController {
                 confirmAppointment.setDisable(true);
             } else {
                 timeListView.setVisible(true);
+                setUpTimeListView();
+                if (timeListView.getSelectionModel().getSelectedItem() != null) {
+                    confirmAppointment.setDisable(false);
+                }
             }
         });
 
@@ -60,5 +62,23 @@ public class CalendarViewController {
                 };
             }
         });
+    }
+
+    private void setUpTimeListView() {
+        for (int i = 0; i < timeListView.getItems().size(); i++) {
+            ListCell<String> cell = getListCell(timeListView, i);
+            cell.setAlignment(Pos.CENTER);
+        }
+    }
+
+    public ListCell getListCell(ListView list, int index) { //found this nice method at https://stackoverflow.com/questions/20936101/get-listcell-via-listview
+        Object[] cells = list.lookupAll(".cell").toArray();
+        return (ListCell)cells[index];
+    }
+
+    public void appointmentSuccess() {
+        Alert successAlert = new Alert(Alert.AlertType.INFORMATION);
+        successAlert.setContentText("Appointment Confirmed");
+        successAlert.show();
     }
 }
