@@ -15,4 +15,5 @@
     <ListView fx:id="timeListView" VBox.vgrow="ALWAYS">
     </ListView>
     <Button fx:id="confirmAppointment" onAction="#appointmentSuccess" text="Confirm Appointment" disable="true" style="-fx-font-size: 18px; -fx-background-color: #00AD9E; -fx-text-fill: #FFFFFF" />
+    <Button fx:id="returnToLogin" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loadMainScreen"  style="-fx-background-color: FFFFFF;" text="Return to login page" textAlignment="CENTER" textFill="#000000e8" underline="false" />
 </VBox>
