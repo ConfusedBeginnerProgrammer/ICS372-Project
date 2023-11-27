@@ -30,7 +30,6 @@ public class RegistrationController {
     private PasswordField password;
     @FXML
     private PasswordField verifyPassword;
-    private Hospital hospital;
 
     public void loadMainScreen(ActionEvent action) throws IOException {
         Stage stage;
@@ -71,13 +70,5 @@ public class RegistrationController {
             errorAlert.setContentText(validator);
             errorAlert.show();
         }
-    }
-
-    public Hospital getHospital(){
-        return this.hospital;
-    }
-
-    private void error(){
-
     }
 }
