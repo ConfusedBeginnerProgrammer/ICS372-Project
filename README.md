@@ -31,3 +31,16 @@ How does one run the application?
 - The JavaFx application is ran through the HelloApplication class which will show the main screen of our app
 - The MainScreen.fxml contains all the mainscren xml code for our app. It's in the resources folder under com.example.mainscreen
 
+Final Functtional Requirements:
+-User registration before logging into the system
+-Registering an account correctly
+-Main screen login page with correct username and password
+-Selection of a reason for the user’s hospital visit
+-Date/time selection for the users appointment before confirming
+-Blocking the user if requirements are not met
+
+Final Non-Functonal Requirements:
+-Security
+-Usability
+-Portability
+-Data Integrity 
