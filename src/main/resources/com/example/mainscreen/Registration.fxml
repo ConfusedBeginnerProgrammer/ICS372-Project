@@ -54,7 +54,7 @@
       <PasswordField id="password" fx:id="verifyPassword" alignment="CENTER" layoutX="173.0" layoutY="350.0" prefHeight="40.0" prefWidth="254.0" promptText="Verify Password" />
       <TextField id="email" fx:id="email" alignment="CENTER" layoutX="173.0" layoutY="249.0" prefHeight="40.0" prefWidth="254.0" promptText="Email Address" />
       <TextField id="userName" fx:id="address" alignment="CENTER" layoutX="173.0" layoutY="398.0" prefHeight="40.0" prefWidth="254.0" promptText="Home Address" />
-      <Button id="enter" alignment="CENTER" layoutX="171.0" layoutY="457.0" mnemonicParsing="false" onAction="#register" prefHeight="54.0" prefWidth="284.0" style="-fx-background-color: #00AD9E;" text="Enter" textAlignment="CENTER" textFill="WHITE" />
+      <Button id="createAccount" alignment="CENTER" layoutX="171.0" layoutY="457.0" mnemonicParsing="false" onAction="#register" prefHeight="54.0" prefWidth="284.0" style="-fx-background-color: #00AD9E;" text="Create Account" textAlignment="CENTER" textFill="WHITE" />
       <Button id="createRegister" fx:id="returnToLogin" contentDisplay="CENTER" layoutX="218.0" layoutY="526.0" mnemonicParsing="false" onAction="#loadMainScreen" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: FFFFFF;" text="Return to login page" textAlignment="CENTER" textFill="#000000e8" underline="true" />
    </children>
 </AnchorPane>
